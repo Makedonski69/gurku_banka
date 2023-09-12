@@ -1,0 +1,1 @@
+# gurku_banka
