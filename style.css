@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: chocolate;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    height: auto;
+    width: 99%;
+    border: solid black 5px;
+    z-index: 1;
+}
+
+.hat{
+    position: absolute;
+    z-index: 2;
+    top: 28%;
+    left: 37%;
+    width: 500px;
+}
