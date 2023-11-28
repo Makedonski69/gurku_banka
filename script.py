@@ -40,4 +40,47 @@ elif d2 >= 12:
     elif d4 == '2':
         print('malacis tu labojies')
 
-print('')
+print('you are in the school')
+print('school bully aproeches you')
+if d4 == 1 or d3 == 1:
+    print('bully laughs at you becouse of your body shape')
+    soc = soc - 1
+    print('social approvment', soc)
+if soc >= 9:
+    d5 = input('offend him:1, other:2 ')
+if d5 == '2' or soc <= 9:
+    d6 = input('ignor him:1, fight:2 ')
+    if d6 == '1':
+        soc = soc -1
+        print('social approvment', soc)
+
+bully = 10
+you = 10
+if d2 >= 8:
+    you = you + 5
+if d5 == '1' or d6 =='2':
+    print('you are fighting the bully')
+    while bully >= 0:
+        atk = input('punch:1 kick:2 block:3 run:4 ')
+        if atk == '4':
+            break
+        elif atk == '1':
+            bully = bully -3
+            print('bully hp:', bully)
+            print('you punched him in the face')
+        elif atk == '2':
+            you = you -1
+            print('your hp:', you)
+            print('you missed the kick and fall on your back')
+        elif atk == '3':
+            print('you placed block')
+        print('bully attacks')
+        if atk == '3':
+            you = you -2
+            print('bully hits you on the shoulder, it hurts bad. your hp: ', you )
+        elif atk == '1':
+            you = you -4
+            print('bully hit you in your stomach, it is painful. your hp: ', you)
+        elif atk == '2':
+            you = you -5
+            print('')
